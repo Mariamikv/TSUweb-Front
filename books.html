@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Blueberry Online Library</title>
+        <meta charset="utf-8"/>
+        <link rel="icon" type="icon/svg" href="icon.svg">
+        <meta name="author" content="Mariam Kvantaliani">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Open+Sans:wght@600&family=Staatliches&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Staatliches&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <script src="slider.js"></script>
+        <script src="index.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+HK:wght@700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        <header class="header_style">
+            <img src="icon.svg" style="width: 20px; height:20px;">
+            <a id="title" href="index.html">blueberry online library</a>
+          </header>
+          <nav>
+            <div class="nav" id="navigation">
+              <a href="index.html" >home<a>
+              <a href="books.html" style="color:#B8B9C6 ">books<a>
+              <a href="about.html">about<a>
+              <a href="contacts.html">contacts<a>
+              <a href="login.html" id="login">login<a></a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+          </nav>
+          <content class="book-list">
+            <div class="bot">
+            <div class="wrapper">
+                <img class="search-icon" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU2Ljk2NiA1Ni45NjYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU2Ljk2NiA1Ni45NjY7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KPHBhdGggZD0iTTU1LjE0Niw1MS44ODdMNDEuNTg4LDM3Ljc4NmMzLjQ4Ni00LjE0NCw1LjM5Ni05LjM1OCw1LjM5Ni0xNC43ODZjMC0xMi42ODItMTAuMzE4LTIzLTIzLTIzcy0yMywxMC4zMTgtMjMsMjMgIHMxMC4zMTgsMjMsMjMsMjNjNC43NjEsMCw5LjI5OC0xLjQzNiwxMy4xNzctNC4xNjJsMTMuNjYxLDE0LjIwOGMwLjU3MSwwLjU5MywxLjMzOSwwLjkyLDIuMTYyLDAuOTIgIGMwLjc3OSwwLDEuNTE4LTAuMjk3LDIuMDc5LTAuODM3QzU2LjI1NSw1NC45ODIsNTYuMjkzLDUzLjA4LDU1LjE0Niw1MS44ODd6IE0yMy45ODQsNmM5LjM3NCwwLDE3LDcuNjI2LDE3LDE3cy03LjYyNiwxNy0xNywxNyAgcy0xNy03LjYyNi0xNy0xN1MxNC42MSw2LDIzLjk4NCw2eiIgZmlsbD0iIzAwMDAwMCIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+                <input class="search" placeholder="Search" type="search" >
+            </div>
+            <div class="dropdown">
+                <button onclick="myDown()" class="dropbtn"> subjects <img src="down.svg" style="width:10px;height:10px;" ></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#home">Agriculture, Aquaculture and Food Science</a>
+                  <a href="#about">Art and Architecture</a>
+                  <a href="#contact">Business, Economics, Finance</a>
+                  <a href="#contact">Chemistry</a>
+                  <a href="#contact">Computer Science And Information Technology</a>
+                  <a href="#contact">Earth, Space And Environmental Science</a>
+                  <a href="#contact">Humanities</a>
+                  <a href="#contact">Law And Criminology</a>
+                  <a href="books.html">Mathematics And Statistics</a>
+                  <a href="#contact">Physical Science And Engineering</a>
+                </div>
+              </div>
+            </div>
+            <div class="books-item">
+              <div class="book-title">
+                <img src="bookicon.svg" style="width: 25px;height:25px;">
+                <h1>Mathematics And Statistics</h1>
+              </div>
+              <div class="book">
+                <img src="images/1.jpg" alt="book image">
+                <h1>Basic Algebra II</h1>
+                <div class="drop">
+                <button id="myBtn" class="butt">Download</button>
+                <div id="Dropdown" class="dropdownContent">
+                  <a href="#home">you need to login/register</a>
+                </div>
+              </div>
+                <p>This explains the following topics: Linear Equations in One Variable, Linear Inequalities,
+                   Formulas, Absolute Value Equations, Solving Absolute Value Inequalities, Slope and equations of
+                    lines, Systems of Linear Equations, Factoring Polynomials , Rational Expressions, Cartesian 
+                    Coordinates and Graphing, Complex numbers, Circles, The graph of a quadratic function.</p>
+              </div>
+              <div class="book">
+                <img src="images/2.jpg" alt="book image">
+                <h1>Basic Algebra I</h1>
+                <div class="drop">
+                  <button id="myBtn" class="butt">Download</button>
+                  <div id="Dropdown" class="dropdownContent">
+                    <a href="#home">you need to login/register</a>
+                  </div>
+                </div>
+                <p>This explains the following topics: Linear Equations in One Variable, Linear Inequalities,
+                   Formulas, Absolute Value Equations, Solving Absolute Value Inequalities, Slope and equations of
+                    lines, Systems of Linear Equations, Factoring Polynomials , Rational Expressions, Cartesian 
+                    Coordinates and Graphing, Complex numbers, Circles, The graph of a quadratic function.</p>
+              </div>
+              <div class="book">
+                <img src="images/3.jpg" alt="book image">
+                <h1>Linear Algebra</h1>
+                <div class="drop">
+                  <button id="myBtn" class="butt">Download</button>
+                  <div id="Dropdown" class="dropdownContent">
+                    <a href="#home">you need to login/register</a>
+                  </div>
+                </div>
+                <p>This explains the following topics: Linear Equations in One Variable, Linear Inequalities,
+                   Formulas, Absolute Value Equations, Solving Absolute Value Inequalities, Slope and equations of
+                    lines, Systems of Linear Equations, Factoring Polynomials , Rational Expressions, Cartesian 
+                    Coordinates and Graphing, Complex numbers, Circles, The graph of a quadratic function.</p>
+              </div>
+              <div class="book">
+                <img src="images/4.jpg" alt="book image">
+                <h1>The Algebra Of Happines</h1>
+                <div class="drop">
+                  <button id="myBtn" class="butt">Download</button>
+                  <div id="Dropdown" class="dropdownContent">
+                    <a href="#home">you need to login/register</a>
+                  </div>
+                </div>
+                <p>This explains the following topics: Linear Equations in One Variable, Linear Inequalities,
+                   Formulas, Absolute Value Equations, Solving Absolute Value Inequalities, Slope and equations of
+                    lines, Systems of Linear Equations, Factoring Polynomials , Rational Expressions, Cartesian 
+                    Coordinates and Graphing, Complex numbers, Circles, The graph of a quadratic function.</p>
+              </div>
+              <div class="book">
+                <img src="images/5.jpg" alt="book image">
+                <h1>Linear Algebra</h1>
+                <div class="drop">
+                  <button id="myBtn" class="butt">Download</button>
+                  <div id="Dropdown" class="dropdownContent">
+                    <a href="#home">you need to login/register</a>
+                  </div>
+                </div>
+                <p>This explains the following topics: Linear Equations in One Variable, Linear Inequalities,
+                   Formulas, Absolute Value Equations, Solving Absolute Value Inequalities, Slope and equations of
+                    lines, Systems of Linear Equations, Factoring Polynomials , Rational Expressions, Cartesian 
+                    Coordinates and Graphing, Complex numbers, Circles, The graph of a quadratic function.</p>
+              </div>
+              <div class="book">
+                <img src="images/6.jpg" alt="book image">
+                <h1>Commutative Algebra</h1>
+                <div class="drop">
+                  <button id="myBtn" class="butt">Download</button>
+                  <div id="Dropdown" class="dropdownContent">
+                    <a href="#home">you need to login/register</a>
+                  </div>
+                </div>
+                <p>This explains the following topics: Linear Equations in One Variable, Linear Inequalities,
+                   Formulas, Absolute Value Equations, Solving Absolute Value Inequalities, Slope and equations of
+                    lines, Systems of Linear Equations, Factoring Polynomials , Rational Expressions, Cartesian 
+                    Coordinates and Graphing, Complex numbers, Circles, The graph of a quadratic function.</p>
+              </div>
+              <div class="book">
+                <img src="images/7.jpg" alt="book image">
+                <h1>Linear Algebra</h1>
+                <div class="drop">
+                  <button id="myBtn" class="butt">Download</button>
+                  <div id="Dropdown" class="dropdownContent">
+                    <a href="#home">you need to login/register</a>
+                  </div>
+                </div>
+                <p>This explains the following topics: Linear Equations in One Variable, Linear Inequalities,
+                   Formulas, Absolute Value Equations, Solving Absolute Value Inequalities, Slope and equations of
+                    lines, Systems of Linear Equations, Factoring Polynomials , Rational Expressions, Cartesian 
+                    Coordinates and Graphing, Complex numbers, Circles, The graph of a quadratic function.</p>
+              </div>
+              <div class="book">
+                <img src="images/8.jpg" alt="book image">
+                <h1>Practical Algebra</h1>
+                <div class="drop">
+                  <button id="myBtn" class="butt">Download</button>
+                  <div id="Dropdown" class="dropdownContent">
+                    <a href="#home">you need to login/register</a>
+                  </div>
+                </div>
+                <p>This explains the following topics: Linear Equations in One Variable, Linear Inequalities,
+                   Formulas, Absolute Value Equations, Solving Absolute Value Inequalities, Slope and equations of
+                    lines, Systems of Linear Equations, Factoring Polynomials , Rational Expressions, Cartesian 
+                    Coordinates and Graphing, Complex numbers, Circles, The graph of a quadratic function.</p>
+                </div>
+            </div>          
+          </content>
+          <footer>
+            <h1>About Blueberry Online Library</h1>
+            <ul>
+              <li><a href="about.html">Privacy Policy</a></li>
+              <li><a  href="about.html">Terms of Use</a></li>
+              <li> <a  href="about.html">Cookes</a></li>
+              <li> <a  href="about.html">Accessibility</a></li>
+              <li> <a  href="contacts.html">Constacts</a></li>
+            </ul>
+          </footer>
+          <script>
+            
+            // Get the button, and when the user clicks on it, execute myFunction
+            document.getElementById("myBtn").onclick = function() {myFunction()};
+
+            /* myFunction toggles between adding and removing the show class,
+             which is used to hide and show the dropdown content */
+            function myFunction() {
+              document.getElementById("Dropdown").classList.toggle("showMe");
+            }
+          </script>
+    </body>
+</html>

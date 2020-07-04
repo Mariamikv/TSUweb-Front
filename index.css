@@ -1,0 +1,572 @@
+body{
+    margin:0 auto;
+    padding: 0;
+    position:relative;
+    background-color: rgb(231, 233, 249 );
+}
+* {box-sizing: border-box}
+*{text-decoration: none;}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.header_style{
+   text-align: center;
+   background-color: rgb(231, 233, 249 );
+   padding: 1% 4%;
+}
+#title{
+    color:#030201;
+    font-family: 'Staatliches', cursive;
+    font-style: normal;
+    letter-spacing:5px;
+    text-transform: capitalize;
+    font-size: 25px;
+    margin-top: -5px;
+}
+.nav{
+    overflow: hidden;
+    text-align: center;
+    background-color: rgb(54, 64, 132 );
+}
+.nav a {
+    display: inline-block;
+    color:#030201;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 100px;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+.nav .icon {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .nav a:not(:first-child) {display: none;}
+    .nav a.icon {
+      float: right;
+      display: block;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .nav.responsive {position: relative;}
+    .nav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
+#slideshow { 
+    margin: auto; 
+    position: relative; 
+    width: 100%;
+    height: 250px; 
+}
+
+#slideshow > #show { 
+    position: absolute; 
+    left:0;
+    right:0;
+   
+}
+.box{
+    padding: 20px 50px;
+    background-color:#1f2b75;
+}
+
+#welcome{
+    display: block;
+    text-transform: capitalize;
+    font-family: 'Lora', serif;
+}
+.welcome{
+    display: block;
+    margin-left: 100px;
+    width:50%;
+    font-family: Open Sans,icomoon,sans-serif;
+    text-transform: lowercase;
+}
+.welcome li{
+    margin: 0 0 5px 0;
+    
+}
+
+.box_Manage{
+    border: 1px solid #BEBEC4 ;
+    padding: 20px;
+    margin: 20px;
+    
+}
+.box_Manage h1{
+    font-family:'Libre Baskerville', serif;
+    font-size:20px;
+}
+.box_Manage h2{
+    font-size:15px;
+}
+.box_Manage li{
+    margin: 0 0 3px 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.box_Manage p{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+#add-image{
+    background-image: url(https://i.pinimg.com/236x/fa/d6/39/fad639d261c7a4235d7363bbcfbaef20.jpg);
+    color:#F2F3F5 ;
+}
+#add-image2{
+    background-image: url(https://i.pinimg.com/564x/96/6d/f7/966df7114180191b0a1e2ceb4d9d9129.jpg);
+    color:#F2F3F5 ;
+}
+
+.boxes1{
+    overflow: hidden;
+    margin-top:10px;
+    margin-left:70px;
+    margin-right:20px;
+    margin-bottom: 20px;
+    clear: both;
+    display: block;
+}
+.boxes1 .icon2 {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .boxes1 a:not(:first-child) {display: none;}
+    .boxes1 a.icon2 {
+      float: right;
+      display: block;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .boxes1.responsive {position: relative;}
+    .boxes1.responsive .icon2 {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .boxes1.responsive a{
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
+footer{
+    background: rgb(15,21,92);
+    background: linear-gradient(0deg, rgba(15,21,92,1) 13%, rgba(17,59,143,1) 67%);
+    margin:0 auto;
+    padding: 10px;
+    width:100%;
+    height:30%;
+    color:#F2F3F5;
+    text-align: center;
+}
+footer h1{
+    font-family:'Libre Baskerville', serif;
+    font-size:25px;
+}
+footer ul{
+    list-style: none;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    float:right;
+}
+  
+.search {
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 35px;
+    width: 300px;
+    padding: 2px 23px 2px 30px;
+    outline: 0;
+    margin-right:50%;
+    background-color: #f5f5f5;
+}
+  
+.search-icon {
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    width: 14px;
+}
+.search:hover, .search:focus {
+    border: 1px solid #009688;
+    background-color: white;
+}
+  
+.items{
+    width:50%;
+    margin:5px 10px 5px 10px;
+}
+.dropbtn {
+    background-color: #123680 ;
+    color: white;
+    width:30%;
+    padding: 16px;
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+  
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+  
+.dropdown {
+    margin-left: 70px;
+    
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width:28%;
+    font-family:'Libre Baskerville', serif;
+}
+  
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown a:hover {background-color: #ddd;}
+  
+.show {display: block;}
+.bot{
+    margin-top: 50px;
+}
+
+.books-item img{
+    width:120px;
+    height: 150px;
+    float: left;
+    margin-right: 15px;
+}
+.book{
+    border: 1px solid #BEBEC4 ;
+    box-shadow: 5px 10px hsl(208, 4%, 68%);
+    padding: 20px;
+    margin: 60px;   
+}
+.books-item h1{
+    font-family:'Libre Baskerville', serif;
+    font-size:25px;
+}
+.books-item p{
+    color:#8896B2;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+    
+}
+.book-title{
+    margin-left: 90px;
+    margin-top: 40px;
+    margin-bottom: -20px;
+}
+.about-page{
+    background-image: url('https://www.wiley.com/sys-master/images/h05/h6e/9133889650718/about.jpg');
+    color:#BEBEC4;
+    line-height: 25px; 
+    padding: 50px;
+}
+.about-page h1{
+    font-family:'Libre Baskerville', serif;
+    font-size:25px;
+}
+.about-page p{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+}
+.terms{
+    margin:60px;
+}
+.terms h1{
+    font-family:'Libre Baskerville', serif;
+    font-size:25px;
+}
+.terms p{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+#flip, #flip2, #flip3 {
+    padding: 5px;
+    text-align: center;
+    border: solid 1px #c3c3c3;
+}
+  
+#panel, #panel2, #panel3 {
+    padding: 50px;
+    display: none;
+}
+.contacts-info{
+    margin:60px;
+    background-color: #B9C3D8;
+    padding:30px;
+}
+.lit{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.lit h1{
+    font-family:'Libre Baskerville', serif;
+    font-size:30px;
+}
+.lit h2{
+    font-family:'Libre Baskerville', serif;
+    font-size:18px;
+}
+.little-info{
+    padding: 20px;
+    border: solid 1px #848497;
+    margin: 10px;
+}
+.little-info h3{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.little-info p{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+#reg{
+    display: none;
+}
+.old-log{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+  
+img.avatar {
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+}
+
+input[type=text], input[type=password] {
+    width: 30%;
+    padding: 12px 20px;
+    margin-top:-10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+#user, #password{
+    font-family:'Libre Baskerville', serif;
+    font-size:15px;
+    color:#6C80A9 ;
+}
+.log{
+    margin-top: 20px;  
+}
+.log p{ 
+    font-family:'Libre Baskerville', serif;
+    font-size: 15px; 
+}
+button {
+    background-color: #3E5992;
+    color: white;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    border-radius: 5px;
+}
+  
+button:hover {
+    opacity: 0.8;
+}
+
+.remember{
+    font-family:'Libre Baskerville', serif;
+    font-size: 15px; 
+    color:#6C80A9;
+}
+.cancelbtn{
+    padding: 14px 20px;
+    font-family:'Libre Baskerville', serif;
+}
+.container-second h1{
+    font-family:'Libre Baskerville', serif;
+    font-size:25px;
+    color:#213050 ;
+}
+.container-second p{
+    font-family:'Libre Baskerville', serif;
+    font-size: 15px; 
+    color:#6C80A9;
+}
+.container-second{
+    font-family:'Libre Baskerville', serif;
+    font-size:15px;
+    color:#6C80A9 ;
+}
+.registerbtn{
+    margin-top: 20px;  
+    padding: 14px 20px;
+    font-family:'Libre Baskerville', serif;
+}
+.butt {
+    background-color: #264663;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    width:100px;
+    height:40px;
+    border: none;
+    cursor: pointer;
+}
+.butt:hover, .butt:focus {
+    background-color: #0a1d2e;
+}
+.drop {
+    position: relative;
+    
+}
+.dropdownContent {
+    clear: both;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdownContent a:hover {background-color: #f1f1f1}
+  
+.showMe {display:block;}
+
+.trans{
+    font-family:'Libre Baskerville', serif;
+    font-size:15px;
+    color:#6C80A9 ;
+    margin-left: 100px;
+}
+
+/* ბლუბერი ლოგოსთვის მთვარ გვეძზე აკეთებს ტრანზიშენს */
+.clickOver{
+    margin-left: 100px;
+    opacity: 1;
+    width:100px;
+    height:100px;
+    cursor: pointer;
+    transition: .3s all ease;
+}
+.clickOver + input{
+    opacity: 0;
+    transition:  .3s all ease;
+}
+.clickOver + input + *{
+    opacity: 0;
+   transition: .3s all ease;
+ }
+ .clickOver + input:checked + *{
+    opacity: 1;
+   transition: .3s all ease;
+     
+}
+
+#bok{
+    float:right;
+    padding: 10px;
+    margin:10px 70px;
+}/* ებაუთვის ფეიჯისთვის იმიკები რომ გადმოატრიალოს  (ტრანსფორმ) გამოდის */
+.scene {
+    width: 100%;
+    height: 400px;
+    perspective: 600px;
+}
+  
+.card {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+  
+.card.is-flipped {
+    transform: rotateY(180deg);
+}
+  
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    padding: 50px;
+}
+.card__face h1{
+    color: hsl(206, 1%, 84%);
+    font-family:'Libre Baskerville', serif;
+    font-size:30px; 
+}
+  .card__face p{
+    color: hsl(206, 1%, 84%);
+    font-family:'Libre Baskerville', serif;
+    font-size:15px; 
+    line-height: 30px;   
+}
+.card__face--front {
+    background-image: url("https://cosmos-images1.imgix.net/file/spina/photo/11040/170706_BrownDwarf1_Full.jpg?ixlib=rails-2.1.4&auto=format&ch=Width%2CDPR&fit=max&w=1920");
+    width: 100%;
+    height: 400px;    
+}
+  
+.card__face--back {
+    background-image: url("images/9.jpg");
+    width: 100%;
+    height: 400px;
+    transform: rotateY(-180deg);
+}
+/* ანიმაციისთვის კონტაქტების გვერძე */
+.anime div{
+    margin-top: 10px;
+    margin-left: 20px;
+    width:5%;
+    height:100px;
+    position:relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+} 
+.anime img{
+    width:100px;
+    height:80px;
+}
+@keyframes example{
+    0%{ left:20px; top:10px;}
+    25%{ left:90%; top:0px;}
+}
