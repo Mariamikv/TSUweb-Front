@@ -1,9 +1,18 @@
+<?php
+  session_start();
+?>
+<?php
+$cookie_name = "user";
+$cookie_value = "student mariami";
+setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Blueberry Online Library</title>
         <meta charset="utf-8"/>
-        <link rel="icon" type="icon/svg" href="icon.svg">
+        <link rel="icon" type="icon/svg" href="svg/icon.svg">
         <meta name="author" content="Mariam Kvantaliani">
         <link rel="stylesheet" type="text/css" href="index.css">
         <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
@@ -20,22 +29,73 @@
     </head>
     <body>
        <header class="header_style">
-          <img src="icon.svg" style="width: 20px; height:20px;">
+          <img src="svg/icon.svg" style="width: 20px; height:20px;">
           <a id="title" href="index.html">blueberry online library</a>
         </header>
         <nav>
           <div class="nav" id="navigation">
-            <a href="index.html" style="color:#B8B9C6 ">home<a>
-            <a href="books.html">books<a>
-            <a href="about.html">about<a>
-            <a href="contacts.html">contacts<a>
-            <a href="login.html" id="login">login<a></a>
+            <a href="index.php" style="color:#B8B9C6 ">home<a>
+            <a href="books.php" >books<a>
+            <a href="about.php">about<a>
+            <a href="contacts.php">contacts<a>
+            <!-- <a href="login.php" id="login">login<a></a> -->
+            <?php
+
+            if(isset($_SESSION['userId'])){
+              echo '<a href="bookAndUsers.php" id="login">users<a></a> ';
+            }
+                if(isset($_SESSION['userId'])){
+                  
+                  echo '<a>
+                  <form action="includes/logout.inc.php" method="POST">
+                    <button type="submit" name="logout-submit" class="logout">Logout</button>
+                  </form>
+                  </a>';
+                }
+                 
+                else{
+                  echo '<a href="login.php" id="login">login<a></a>';
+                }
+              ?>
+            <?php
+              if(isset($_SESSION['userId'])){
+                echo '<a><p>WELCOME </p></a>';
+              }
+              else{
+                echo '';
+              }
+            ?>
+            
+            <!-- <a>
+              <form action="includes/logout.inc.php" method="POST">
+                <button type="submit" name="logout-submit" class="logout">Logout</button>
+              </form>
+              </a> -->
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
             </a>
           </div>
         </nav>
         <main>
+
+
+
+        <?php
+
+      if(isset($_SESSION['userId'])){
+    
+        if(!isset($_COOKIE[$cookie_name])) {
+          echo"<script>alert('Cookie named '" . $cookie_name . "' is not set!')</script>";
+          echo"<script>window.open('bookAndUsers.php','_self')</script>"; 
+              
+        } else {
+          echo"";
+          
+        }
+      }
+          ?>
+
+
             <div id="slideshow">
                 <div id="show">
                   <img src="https://onlinelibrary.wiley.com/pb-assets/hub-assets/pericles/info-pages-librarians.jpg" alt="" style="width:100%; height:250px;">
@@ -73,7 +133,7 @@
                   </ul>
             </div>
             <div>
-              <label class="clickOver" for="_1"><img src="blue.svg" style="width:50px; height:50px;"></label>
+              <label class="clickOver" for="_1"><img src="avg/blue.svg" style="width:50px; height:50px;"></label>
               <input id="_1" type="checkbox">
                <div><h1 class="trans">Accelerating research discovery to shape a better future  </h1></div>
             </div>
@@ -150,11 +210,11 @@
        <footer>
            <h1>About Blueberry Online Library</h1>
            <ul>
-             <li><a href="about.html">Privacy Policy</a></li>
-             <li><a  href="about.html">Terms of Use</a></li>
-             <li> <a  href="about.html">Cookes</a></li>
-             <li> <a  href="about.html">Accessibility</a></li>
-             <li> <a  href="contacts.html">Constacts</a></li>
+             <li><a href="about.php">Privacy Policy</a></li>
+             <li><a  href="about.php">Terms of Use</a></li>
+             <li> <a  href="about.php">Cookes</a></li>
+             <li> <a  href="about.php">Accessibility</a></li>
+             <li> <a  href="contacts.php">Constacts</a></li>
            </ul>
        </footer>
        <script>

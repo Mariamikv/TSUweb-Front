@@ -408,6 +408,7 @@ button:hover {
 .cancelbtn{
     padding: 14px 20px;
     font-family:'Libre Baskerville', serif;
+    background-color: #264663;
 }
 .container-second h1{
     font-family:'Libre Baskerville', serif;
@@ -570,3 +571,9 @@ button:hover {
     0%{ left:20px; top:10px;}
     25%{ left:90%; top:0px;}
 }
+
+.logout{
+    width:70px;
+    height:40px;
+}
+
